@@ -24,5 +24,6 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const cityData = await getCityData();
   city.textContent = cityData.cityName;
-  temp.textContent = cityData.temp
+  temp.textContent = cityData.temp;
+  
 })
