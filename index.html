@@ -9,7 +9,14 @@
 </head>
 <body>
   <div class="hero">
-      <h1>Weather App</h1>
+      <div class="menu">
+        <h1>Weather App</h1>
+        <button class="switch-metric" current-metric="fahrenheit">
+          <span class="celsius"">°C</span>
+          <span>/</span>
+          <span class="fahrenheit">°F</span>
+        </button>
+      </div>
       <p>Wherever you go, discover the weather</p>
   </div>
   <div class="content">
@@ -21,7 +28,10 @@
       <h2 class="city"></h2>
       <div class="temp-details">
         <img src="" class="temp-icon">
-        <p class="temp"></p>
+        <div class="temp-symbol">
+          <p class="temp"></p>
+          <span>°</span>
+        </div>
       </div>
     </div>
   </div>
