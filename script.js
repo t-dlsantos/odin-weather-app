@@ -17,7 +17,6 @@ const getCityData = async () => {
   try {
     const reponse = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${citySearched}/?key=${API_KEY}`, { mode: "cors" });
     const weatherData = await reponse.json();
-    console.log(weatherData)
     desiredData = { cityName: weatherData.resolvedAddress, temp: weatherData.currentConditions.temp, conditions: weatherData.currentConditions.conditions, icon: weatherData.currentConditions.icon };
   } catch(error) {
     console.log(error);
